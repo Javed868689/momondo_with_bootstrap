@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momondo Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- nav section start -->
+  <nav class="navbar navbar-expand-lg bg-blue">
+    <div class="container">
+      <a class="navbar-brand fw-bold"  href="#"><span style="color:#1FABCC; font-size: 30px;">mo</span><span style="color:#B41C64;  font-size: 30px;">mon</span><span style="color:#C15128;  font-size: 30px;">do</span></a>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-danger2 fw-bold" aria-current="page" href="#">flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void()">Hotel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void()">Car Hire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void()">Trip Finder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void()">Inspiration</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    English(GDP)
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="#">Action</a></li>
+                    <li><a class="dropdown-item " href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item " href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success2 fw-bold" href="#">Log In</a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- /nav section end -->
+
+      <!-- banner section start  -->
+
+      <section class="banner position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9 col-lg-7 position-absolute top-20 ms-1 text-white">
+              <h1>
+                "The best place to find <br>
+                the cheapest arifares"
+              </h1>
+              <p class="fw-bold fs-3">
+                -Every Single Time
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11 col-sm-9 position-absolute bottom-0 mb-4 ms-3 bg-danger1 rounded p-1">
+              <nav class="mb-2">
+              <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                <button class="nav-link rounded-0 border-0 text-light mx-1 bg-blue1 py-0 btn-width-80 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                  <i class="fa-solid fa-plane-departure"></i> Flights
+                </button>
+                <button class="nav-link rounded-0 border-0 text-light mx-1 bg-blue1 py-0 btn-width-80" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                   <i class="fa-solid fa-hotel"></i> Hotels
+                </button>
+                <button class="nav-link rounded-0 border-0 text-light mx-1 bg-blue1 py-0 btn-width-80" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                  <i class="fa-solid fa-car"></i> Cars
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <form>
+                  <div class="row g-1">
+                    <div class="col-sm-6 col-lg-2">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Enter origin city</option>
+                        <option value="del">Delhi</option>
+                        <option value="mum">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="hyd">Hyderabad</option>
+                        <option value="bang">Banglore</option>
+                        <option value="chen">Chennai</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Enter destination city</option>
+                        <option value="del">Delhi</option>
+                        <option value="mum">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="hyd">Hyderabad</option>
+                        <option value="bang">Banglore</option>
+                        <option value="chen">Chennai</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="date" class="form-control" aria-label="date">
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="date" class="form-control" aria-label="Last name">
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Passengers</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                        <option value="6">Six</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-lg-1">
+                      <input type="button" class="form-control circle" value="search" aria-label="submit">
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <select class=" trip" aria-label="Default select example">
+                          <option selected>trip type: return trip</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="4">Four</option>
+                          <option value="5">Five</option>
+                          <option value="6">Six</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <select class="trip" aria-label="Default select example">
+                          <option selected>Tecket classes</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="4">Four</option>
+                          <option value="5">Five</option>
+                          <option value="6">Six</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <div class="form-check text-light">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Direct flights only
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <div class="form-check text-light">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Include nearby airport
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ab ipsa. Officiis unde inventore iusto.
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate dolorem placeat nemo explicabo fuga cum, laudantium velit.
+              </div>
+            
+            </div>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+      </section>
+
+      <!-- banner section end -->
+
+      <!-- fun section start -->
+
+      <section class="fun text-white">
+        <div class="container">
+          <div class="row">
+            <h2 class=" heading">Some Fun We Covered</h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="bg p-5 my-2">
+                  <i class="fa-solid fs-1 fa-person-biking"></i>
+                  <p>5670 M  Cycling Track</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="bg p-5 my-2">
+                  <i class="fa-solid fs-1 fa-location-dot"></i>
+                  <p>5670 M Strugle Map</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="bg p-5 my-2">
+                  <i class="fa-brands fs-1 fa-pied-piper-alt"></i>
+                  <p>5670 M Struggle Man</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="bg p-5 my-2">
+                  <i class="fa-solid fs-1 fa-ship"></i>
+                  <p>180 KM Sailing Distance</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="bg p-5 my-2">
+                  <i class="fa-brands fs-1 fa-space-awesome"></i>
+                  <p>570 KM Spent Adventure</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="bg p-5 my-2">
+                  <i class="fa-solid fs-1 fa-user-graduate"></i>
+                  <p>567 M Jugle Distance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- /fun section end -->
+
+      <!-- subscribe section start -->
+
+      <section class="subscribe text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col top-10">
+              <h3>SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS </h3>
+              <p class="py-3 fs-5">
+                Join our community of our 300,000 global readers who received our news.<br> promotions and other good stuff from G Adventure 
+              </p>
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <form class="pt-2" action="">
+                    <input type="email" placeholder="Enter your email address..." class="form-control bg-dark1 inputText py-2 px-1 border-light">
+                    
+                  </form>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <form class="pt-2" action="">
+                    
+                    <input type="submit" value="search" class="form-control">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /subscribe section end -->
+
+      <!-- destination Start -->
+      <section class="destination bg-blue2 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col heading1 text-white fs-3"> POPULAR DESTINATION</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-1 bg-light rounded">
+                <img src="./assets/img/img2.jpg" class="col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img3.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img4.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img5.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img6.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img7.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img8.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="p-1 m-2 bg-light rounded">
+                <img src="./assets/img/img9.jpg" class=" col-12" width="237" height="150">
+                <h6 class="fw-bold p-3"><span class="text-danger">$999</span> florence & vehicle and 9-night vacation and winter</h6>
+                <p class="px-3">This is a lowest price we are soon in four years for the nine-night</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </section>
+      <!-- /destination end -->
+
+      <!-- estimate section start -->
+
+      <section class="estimate text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>GET A QUICT ESTIMATE!</h1>
+              <h3>GET A PROFFESIONAL HELP</h3>
+              <hr width="80px" style="font-weight: bold;">
+                  <form action="">
+                    <select class="py-1" aria-label="Default select example">
+                      <option selected>Travel purpose</option>
+                      <option value="del">Business</option>
+                      <option value="mum">Medicine</option>
+                      <option value="pune">vacation</option>
+                      <option value="hyd">Meeting</option>
+                      <option value="bang">Enjoying</option>
+                      <option value="chen">career</option>
+                    </select>
+                    <input type="date" class="py-1" aria-label="travel date">
+                    <select class="py-1" aria-label="Default select example">
+                      <option selected>Number of people</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                    <input type="email" class="py-1" placeholder="Your Email" aria-label="email">
+                    <input type="submit" class="bg-danger2 py-1" value="CALCULATE NOW" aria-label="btn">
+                
+                  </form>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- /estimate section end -->
+
+      <!-- blog section start -->
+
+      <section class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3 class="my-3">LATEST BLOG</h3>
+              <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Vero nostrum soluta distinctio accusantium veniam perspiciatis 
+                   rerum temporibus voluptatum natus beatae, eveniet sapiente
+                   suscipit laboriosam voluptate similique! Vero excepturi et officiis?
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 my-3">
+                <img src="./assets/img/blog2.jpg" alt="" width="200" height="240">
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 my-3">
+                <p class="text-danger">feb 20, 2023</p>
+                <h6 class="fw-bold">10 things too before travel</h6>
+                <p class=" pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus tempora assumenda vero id cupiditate.
+
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 my-3">
+                <img src="./assets/img/blog1.jpg" alt="" width="200" height="240">
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 my-3">
+                <p class="text-danger">feb 20, 2023</p>
+                <h6 class="fw-bold">10 things too before travel</h6>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus tempora assumenda vero id cupiditate.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /blog section end -->
+
+      <!-- footer section start............................... -->
+
+      <footer class="py-3">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <h4 class="text-white py-3">Top Countries</h4>
+              <ul class="list-unstyled">
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> United States</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> United Kingdom</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> Spain
+
+                  </a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> Thailand</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> India</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> Italy</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> Germany</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> Denmark</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> France</a>
+                </li>
+                <li class="text-gray1">
+                  <i class="fa-solid fa-earth-americas"></i> Flights to
+                  <a class="text-white text-decoration-none" href="javascript:void()"> Australia</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <h4 class="text-white py-3">Top Cities</h4>
+              <ul class="list-unstyled">
+                <li class="text-gray1">
+                  <i class="fa-solid fa-location-dot"></i> Flights to 
+                  <a class="text-white text-decoration-none" href="javascript:void()">Londan</a> United Kingdom
+                </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">New York</a> United States
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Bangkok</a> Thailand
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Copenhagen</a> Denmark
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Orlando</a> United States
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Paris</a> France
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Dubai</a> United Arab Emirates
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Singapore</a> Singapore
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Istanbul</a> Turkey
+              </li>
+              <li class="text-gray1">
+                <i class="fa-solid fa-location-dot"></i> Flights to 
+                <a class="text-white text-decoration-none" href="javascript:void()">Hong Kong</a> Hong Kong
+              </li>
+              </ul>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+              <h4 class="text-white py-3">International Sites</h4>
+           <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <ul class="list-unstyled">
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/hk.png"
+                  srcset="
+                    https://flagcdn.com/32x24/hk.png 2x,
+                    https://flagcdn.com/48x36/hk.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Hong Kong"
+                /><a> Hong Kong</a> </li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/jm.png"
+                  srcset="
+                    https://flagcdn.com/32x24/jm.png 2x,
+                    https://flagcdn.com/48x36/jm.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Jamaica"
+                /><a> Jamaica</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/pt.png"
+                  srcset="
+                    https://flagcdn.com/32x24/pt.png 2x,
+                    https://flagcdn.com/48x36/pt.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Portugal"
+                /><a> Portugal</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/gb-sct.png"
+                  srcset="
+                    https://flagcdn.com/32x24/gb-sct.png 2x,
+                    https://flagcdn.com/48x36/gb-sct.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Scotland"
+                /><a> Scotland</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/lk.png"
+                  srcset="
+                    https://flagcdn.com/32x24/lk.png 2x,
+                    https://flagcdn.com/48x36/lk.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Sri Lanka"
+                /><a> Sri Lanka</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/es.png"
+                  srcset="
+                    https://flagcdn.com/32x24/es.png 2x,
+                    https://flagcdn.com/48x36/es.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Spain"
+                /><a> Spain</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/th.png"
+                  srcset="
+                    https://flagcdn.com/32x24/th.png 2x,
+                    https://flagcdn.com/48x36/th.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Thailand"
+                /><a> Thailand</a></li>
+              </ul>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <ul class="list-unstyled">
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/ua.png"
+                  srcset="
+                    https://flagcdn.com/32x24/ua.png 2x,
+                    https://flagcdn.com/48x36/ua.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Ukraine"
+                /><a> Ukraine</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/cv.png"
+                  srcset="
+                    https://flagcdn.com/32x24/cv.png 2x,
+                    https://flagcdn.com/48x36/cv.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Cape Verde"
+                /><a> Cape Verde</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/ax.png"
+                  srcset="
+                    https://flagcdn.com/32x24/ax.png 2x,
+                    https://flagcdn.com/48x36/ax.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Åland Islands"
+                /><a> Åland Islands</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/au.png"
+                  srcset="
+                    https://flagcdn.com/32x24/au.png 2x,
+                    https://flagcdn.com/48x36/au.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Australia"
+                /><a> Australia</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/bb.png"
+                  srcset="
+                    https://flagcdn.com/32x24/bb.png 2x,
+                    https://flagcdn.com/48x36/bb.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Barbados"
+                /><a> Barbados</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/in.png"
+                  srcset="
+                    https://flagcdn.com/32x24/in.png 2x,
+                    https://flagcdn.com/48x36/in.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="India"
+                /><a> India</a></li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/is.png"
+                  srcset="
+                    https://flagcdn.com/32x24/is.png 2x,
+                    https://flagcdn.com/48x36/is.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Iceland"
+                /><a> Iceland</a></li>
+              </ul>
+
+            </div>
+          </div>
+          </div>
+           
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="row pt-4">
+        <div class="col-lg-1 col-md-1 col-sm-12 d-flex">
+          <img src="./assets/img/flower.png" alt="" width="70" height="70">
+        </div>
+        <div class="col-lg-9 col-md-10 ">
+          <ul class="list-unstyled d-md-flex mb-0 info">
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">About Us</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Jobs</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Press</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Afiliate</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Terms of Use</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Cookies</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Airfires</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Apps</a>
+            </li>
+            <li>
+              <a class="text-white text-decoration-none px-2" href="javascript:void()">Help</a>
+            </li>
+          </ul>
+          <p class="text-gray1">
+            momondo.co.uk is a free. Independent global travel search site comparing billions of cheap flights, hotel and car hire deals project done by <span style="font-weight: bold; color: #A13352;">JAVED KHAN</span> 
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-12 d-flex social-icon">
+          <ul class="list-unstyled d-flex">
+            <li class="px-3 "><a href="javascript:void()" class="me-2"><i class="fa-brands fa-twitter text-white fs-3"></i></a></li>
+            <li class="px-3"><a href="javascript:void()" class="bg-gray me-2"><i class="fa-brands fa-facebook-f text-white fs-3"></i></a></li>
+            <li class="px-3"><a href="javascript:void()" class="bg-gray me-2"><i class="fa-brands fa-google-plus-g text-white fs-3"></i></a></li>
+          </ul>
+          
+        </div>
+          </div>
+        </div>
+
+      </footer>
+
+      <!-- /footer section end............................... -->
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

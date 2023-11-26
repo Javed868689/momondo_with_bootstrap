@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.bg-blue{
+    background-color: #22304d;
+}
+.bg-blue1{
+    background: #3d115c;
+}
+.bg-blue2{
+    background: #1F152F;
+    padding-top: 100;
+}
+.bg-danger1{
+   background: #5C327A;
+}
+.text-success2{
+    color: #78d11f;
+}
+.text-danger2{
+    color: #C15128 !important;
+}
+/* banner section start */
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img1.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+}
+.top-20{
+    top:20%;
+}
+
+
+.nav-tabs .nav-link.active {
+    background: #C15128;
+}
+.trip{
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* /banner section end */
+
+/* fun section start  */
+.fun{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/hills.jpg);
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+}
+
+.heading{
+    margin:30px 0px 20px 0px;
+    text-align: center;
+}
+.bg{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    text-align: center;
+}
+/* /fun section end */
+
+/* subscribe section start */
+
+.subscribe{
+    width: 100%;
+    height:auto;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/aeroplane.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    
+}
+
+.bg-dark1{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    border-width: 1px;
+}
+.inputText{
+    background: white;
+}
+
+
+/* /subscribe section end */
+
+/* destination section start */
+
+.destination{
+    width: 100%;
+    height: auto;
+    
+}
+.heading1{
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+}
+.top-10{
+    margin:10% 0% 10% 0%;
+}
+/* /destination section end */
+
+/* estimate section start */
+
+.estimate{
+    width: 100%;
+    height: auto;
+    background-color: #664BAD;
+}
+.line{
+    width: 70px;
+    height: 100px;
+    font-weight: 900px;
+   
+}
+.bg-danger2{
+    background: #FE910F;
+    border: none;
+}
+
+/* /estimate section end */
+
+/* blog section start */
+
+.blog{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    
+}
+
+/* /blog section end */
+
+/* footer section start................. */
+
+footer{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/airport.jpg);
+    width: 100%;
+    height:auto;
+    background-size: 100% 100%;
+}
+.text-gray1{
+    color: rgb(165, 160, 160);
+}
+.fs1-{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* /footer section end................. */
+
+
+
+
+
+
+
+
+
+/* media query start */
+@media screen and (min-width:992px) {
+    .circle{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        position: absolute;
+        top: 7%;
+        right: 2%;
+        background: #C15128;
+        border: none;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .top-20{
+        top:10%;
+    }
+    
+    
+}
+@media screen and (max-width:320px) {
+    .btn-width-80{
+        width: 80px !important;
+        font-size: 11px !important;
+
+    }
+    
+}
+
+/* media query end */
